@@ -4,10 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  overflow: hidden;
+}
 .main {
-    display:flex;
-    align-items: center;
-  width: 100;
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(
     to right,
@@ -28,6 +31,7 @@
   flex-wrap: nowrap;
   background-color: #ffffff;
   border-radius: 30px;
+  padding: 50px 0px;
 }
 .main .container .left {
   width: 50%;
@@ -44,10 +48,10 @@
 }
 .main .container .right h3 {
   font-size: 30px;
-  color: #3E3E3E;
+  color: #3e3e3e;
   margin: auto;
-  font-weight:800;
-  margin-bottom:30px;
+  font-weight: 800;
+  margin-bottom: 30px;
   letter-spacing: 0px;
 }
 .main .container .right h3 span {
@@ -55,128 +59,179 @@
 }
 .main .container .right p {
   font-size: 16px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .main .container .right .login-with-app {
-  border: 2px solid #DADCE2;
-  border-radius:20px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  border: 2px solid #dadce2;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 50px;
   display: flex;
-  cursor:pointer;
-  margin-bottom:20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 .main .container .right .login-with-app i {
   font-size: 30px;
-  color: #3E3E3E;
+  color: #3e3e3e;
 }
-.main .container .right .login-with-app a{
-    text-decoration:none;
-    color:#3E3E3E;
-    font-size:14px;
+.main .container .right .login-with-app a {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-size: 14px;
 }
-.main .container .right .or{
-    display:flex;
-    align-items:center;
-    position:relative;
+.main .container .right .or {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.main .container .right .or span{
-    width:100px;
-    height:1px;
-    background-color: #C3C7D3;
-    position:relative;
-    bottom:10px;
+.main .container .right .or span {
+  width: 100px;
+  height: 1px;
+  background-color: #c3c7d3;
+  position: relative;
+  bottom: 10px;
 }
-.main .container .right .or p{
-    padding: 0px 10px;
-    color:#C3C7D3;
-    /* color:#3E3E3E; */
+.main .container .right .or p {
+  padding: 0px 10px;
+  color: #c3c7d3;
 }
-.main .container .right form .name-input{
-    display:flex;
-    align-items:center;
-    border: 2px solid #DADCE2;
-    gap:5px;
-    padding:0px 10px;
-    margin-bottom:10px;
-    border-radius:50px;
+.main .container .right form .name-input {
+  display: flex;
+  align-items: center;
+  border: 2px solid #dadce2;
+  gap: 5px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
 }
-.main .container .right form .name-input i{
-    color:#C3C6D0;
+.main .container .right form .name-input i {
+  color: #c3c6d0;
 }
-.main .container .right form .name-input input{
-    outline:none;
-    border:none;
-    padding:10px 10px;
-    color:#DADCE2;
+.main .container .right form .name-input input {
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  color: #dadce2;
 }
-.main .container .right form .password-input{
-    display:flex;
-    align-items:center;
-    border:2px solid #DADCE2;
-    border-radius: 50px;
-    gap:5px;
-    padding:0px 10px;
-    margin-bottom:10px;
+.main .container .right form .password-input {
+  display: flex;
+  align-items: center;
+  border: 2px solid #dadce2;
+  border-radius: 50px;
+  gap: 5px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
 }
-.main .container .right form .password-input input{
-    outline:none;
-    border:none;
-    padding:10px 10px;
-    color:#DADCE2;
+.main .container .right form .password-input input {
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  color: #dadce2;
 }
-.main .container .right form .password-input i{
-    color:#DADCE2;
+.main .container .right form .password-input i {
+  color: #dadce2;
 }
-.main .container .right form .password-input i.bxs-hide{
-    display:none;
+.main .container .right form .password-input i.bxs-hide {
+  display: none;
 }
-.main .container .right .remember-forgotten{
-    display:flex;
-    margin-bottom:15px;
-    gap:30px;
+.main .container .right .remember-forgotten {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 30px;
 }
-.main .container .right .remember-forgotten .remember{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    cursor:pointer;
+.main .container .right .remember-forgotten .remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 }
-.main .container .right .remember-forgotten .remember label{
-    font-size:12px;
-    font-weight:600;
-    color:#141414;
+.main .container .right .remember-forgotten .remember label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #141414;
 }
 .main .container .right .remember-forgotten .forgotten {
+  display: flex;
+  align-items: center;
+}
+.main .container .right .remember-forgotten .forgotten a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #9fa0a5;
+}
+.main .container .right a.log {
+  text-decoration: none;
+  color: #fff;
+  background-color: #027cfb;
+  padding: 12px 95px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.main .container .right .signup {
+  display: flex;
+  gap: 10px;
+}
+.main .container .right .signup p {
+  color: #9fa0a5;
+}
+.main .container .right .signup a {
+  text-decoration: none;
+  color: #141414;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 690px) {
+  body {
+    overflow: hidden;
+  }
+  .main .container {
+    width: 100%;
+    display:block;
+    height: 100vh;
+    /* padding: 50px; */
+    justify-content: flex-start;
+  } 
+  .main .container .left {
+    display:none;
+    width: 100%;
+  }
+  .main .container .right {
     display:flex;
     align-items:center;
+    width: 100%;
+  }
+  .main .container .right h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .main .container .right p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.main .container .right .remember-forgotten .forgotten a{
-    font-size:12px;
-    text-decoration:none;
-    color:#9FA0A5;
 }
-.main .container .right a.log{
-    text-decoration:none;
-    color:#fff;
-    background-color: #027cfb;
-    padding:12px 95px;
-    font-size:16px;
-    letter-spacing:1px;
-    border-radius: 50px;
-    margin-bottom:10px;
+
+@media only screen and (max-width:430px){
+    .main .container .right{
+        height:85%;
+    }
+    .main .container .right h3{
+        font-size:40px;
+    }
 }
-.main .container .right .signup{
-    display:flex;
-    gap:10px;
+
+@media only screen and (max-width:375px){
+    .main .container .right h3{
+        font-size:30px;
+    }
 }
-.main .container .right .signup p{
-    color:#9FA0A5;
-}
-.main .container .right .signup a{
-    text-decoration:none;
-    color: #141414;
-    font-weight:600;
+
+@media only screen and (max-width:320px){
+    .main .container .right{
+        height:100%;
+    }
 }
