@@ -115,6 +115,10 @@ body {
   padding: 10px 10px;
   color: #dadce2;
 }
+.main .container .right form .name-input input:focus,
+.main .container .right form .password-input input:focus {
+  color: #3E3E3E;
+}
 .main .container .right form .password-input {
   display: flex;
   align-items: center;
