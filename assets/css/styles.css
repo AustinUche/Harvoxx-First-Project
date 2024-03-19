@@ -165,7 +165,7 @@ body {
   text-decoration: none;
   color: #9fa0a5;
 }
-.main .container .right a.log {
+.main .container .right button.log {
   text-decoration: none;
   color: #fff;
   background-color: #027cfb;
@@ -174,6 +174,9 @@ body {
   letter-spacing: 1px;
   border-radius: 50px;
   margin-bottom: 10px;
+  cursor:pointer;
+  outline:none;
+  border:none;
 }
 .main .container .right .signup {
   display: flex;
@@ -187,6 +190,63 @@ body {
   color: #141414;
   font-weight: 600;
 }
+
+.success{
+  width:100%;
+  height:100%;
+  background: rgba(20, 20, 30, 0.5);
+  position:fixed;
+  top:0;
+  left:0;
+  display: none;
+  align-items: center;
+}
+.success i.bx-x{
+  font-size:30px;
+  color:white;
+  position:fixed;
+  right:30px;
+  top:30px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color: #3e3e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+.success .container{
+  width:250px;
+  /* height:100px; */
+  margin:auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  padding:20px 0px;
+}
+.success .container .icon{
+  width:50px;
+  height:50px;
+  background-color: green;
+  border-radius:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.success .container .icon i.bx-check{
+  color:white;
+  font-size:40px;
+}
+.success .container .text{
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 690px) {
   body {
