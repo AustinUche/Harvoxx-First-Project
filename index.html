@@ -33,11 +33,11 @@
                 <form >
                     <div class="name-input">
                         <i class='bx bxs-envelope'></i>
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="email">
                     </div>
                     <div class="password-input">
                         <i class='bx bxs-lock-open'></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="password">
                         <i class='bx bxs-show'></i>
                         <i class='bx bxs-hide'></i>
                     </div>
@@ -51,13 +51,27 @@
                         <a href="">Forgotten Password?</a>
                     </div>
                 </div>
-                <a href="" class="log">Login</a>
+                <button class="log" id="login" onclick="getValue()">Login</button>
                 <div class="signup">
                     <p>Don't have an account?</p>
-                    <a href="">Sign up</a>
+                    <a href="#">Sign up</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="success" id="success">
+        <i class="bx bx-x" id="close"></i>
+        <div class="container">
+            <div class="icon">
+                <i class="bx bx-check"></i>
+            </div>
+            <div class="text">
+                <h4>You have been successfully logged in.</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
